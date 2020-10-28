@@ -1,1 +1,1 @@
-# Variant-discovery-using-long-read-data-across-SRA
+# Variant discovery using long-read data across SRA
