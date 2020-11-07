@@ -1,0 +1,45 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=RefCall,Description="Genotyping model thinks this site is reference.">
+##FILTER=<ID=LowQual,Description="Confidence in this variant being real is below calling threshold.">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position (for use with symbolic alleles)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Conditional genotype quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=MIN_DP,Number=1,Type=Integer,Description="Minimum DP observed within the GVCF block.">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Read depth for each allele">
+##FORMAT=<ID=VAF,Number=A,Type=Float,Description="Variant allele fractions.">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="Phred-scaled genotype likelihoods rounded to the closest integer">
+##DeepVariant_version=1.0.0
+##contig=<ID=NC_045512.2,length=29903>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	default
+NC_045512.2	1	.	A	<*>	0	.	END=1000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	1001	.	G	<*>	0	.	END=2000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	2001	.	G	<*>	0	.	END=3000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	3001	.	T	<*>	0	.	END=4000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	4001	.	A	<*>	0	.	END=5000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	5001	.	T	<*>	0	.	END=6000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	6001	.	T	<*>	0	.	END=7000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	7001	.	T	<*>	0	.	END=8000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	8001	.	A	<*>	0	.	END=9000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	9001	.	T	<*>	0	.	END=10000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	10001	.	T	<*>	0	.	END=11000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	11001	.	C	<*>	0	.	END=12000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	12001	.	T	<*>	0	.	END=13000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	13001	.	T	<*>	0	.	END=14000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	14001	.	A	<*>	0	.	END=15000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	15001	.	T	<*>	0	.	END=16000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	16001	.	T	<*>	0	.	END=17000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	17001	.	A	<*>	0	.	END=18000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	18001	.	A	<*>	0	.	END=19000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	19001	.	T	<*>	0	.	END=20000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	20001	.	T	<*>	0	.	END=21000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	21001	.	T	<*>	0	.	END=22000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	22001	.	A	<*>	0	.	END=23000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	23001	.	G	<*>	0	.	END=24000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	24001	.	C	<*>	0	.	END=25000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	25001	.	T	<*>	0	.	END=26000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	26001	.	A	<*>	0	.	END=27000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	27001	.	A	<*>	0	.	END=28000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	28001	.	G	<*>	0	.	END=29000	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0
+NC_045512.2	29001	.	G	<*>	0	.	END=29903	GT:GQ:MIN_DP:PL	0/0:1:0:0,0,0

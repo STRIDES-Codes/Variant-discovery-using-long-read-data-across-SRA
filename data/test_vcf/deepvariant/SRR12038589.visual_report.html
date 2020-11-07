@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://storage.googleapis.com/deepvariant/lib/vega/vega@5"></script>
+  <script type="text/javascript" src="https://storage.googleapis.com/deepvariant/lib/vega/vega-lite@3.4.0"></script>
+  <script type="text/javascript" src="https://storage.googleapis.com/deepvariant/lib/vega/vega-embed@4"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "header": {"labelFontSize": 16, "titleFontSize": 20}, "title": {"fontSize": 20}}, "vconcat": [{"hconcat": [{"data": {"name": "data-b67ec05acc63940ca4df7271dbaf1143"}, "mark": {"type": "text", "size": 14}, "encoding": {"text": {"type": "nominal", "field": "placeholder"}}, "height": 200, "title": "Variant types", "width": 400}, {"data": {"name": "data-a2e00cd4653cf664f9d8893ddf89e6c8"}, "mark": {"type": "text", "size": 14}, "encoding": {"text": {"type": "nominal", "field": "placeholder"}}, "height": 200, "title": "Depth", "width": 200}, {"data": {"name": "data-b67ec05acc63940ca4df7271dbaf1143"}, "mark": {"type": "text", "size": 14}, "encoding": {"text": {"type": "nominal", "field": "placeholder"}}, "height": 200, "title": "Quality score", "width": 200}, {"data": {"name": "data-7c384005a17af21b412eb78cf0b899b4"}, "mark": {"type": "text", "size": 14}, "encoding": {"text": {"type": "nominal", "field": "placeholder"}}, "height": 200, "title": "Genotype quality", "width": 200}], "resolve": {"scale": {"color": "independent"}}}, {"hconcat": [{"data": {"name": "data-57a1a0752ce0c3ea2e0f838660e4fa2f"}, "facet": {"column": {"type": "nominal", "field": "GT", "sort": ["Ref (0/0)", "Het (0/x)", "Hom (x/x)"], "title": "Main genotypes"}}, "spec": {"layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "field": "s", "title": "VAF"}, "x2": {"field": "e"}, "y": {"type": "quantitative", "axis": {"format": "s"}, "field": "c", "stack": true, "title": "Count"}}}, {"mark": "rule", "encoding": {"x": {"type": "quantitative", "field": "l"}}}], "height": 200, "width": 200}, "resolve": {"scale": {"y": "independent"}}}, {"data": {"name": "data-c27c47333ad35eb954c1fa8cd921aa87"}, "mark": "bar", "encoding": {"column": {"type": "nominal", "field": "GT", "title": "Other genotypes"}, "x": {"type": "quantitative", "field": "s", "title": "VAF"}, "x2": {"field": "e"}, "y": {"type": "quantitative", "axis": {"format": "s"}, "field": "c", "stack": true, "title": "Count"}}, "height": 150, "resolve": {"scale": {"y": "independent"}}, "width": 150}]}, {"hconcat": [{"data": {"name": "data-4873ade5c3f0b2272f2ce09e16536040"}, "mark": {"type": "text", "size": 14}, "encoding": {"text": {"type": "nominal", "field": "placeholder"}}, "height": 200, "title": "Biallelic base changes from reference", "width": 480}, {"data": {"name": "data-4873ade5c3f0b2272f2ce09e16536040"}, "mark": {"type": "text", "size": 14}, "encoding": {"text": {"type": "nominal", "field": "placeholder"}}, "height": 200, "title": "Biallelic Ti/Tv ratio: 0 / 0", "width": 150}, {"data": {"name": "data-0bc020e31c321dd706d120527114f585"}, "mark": {"type": "text", "size": 14}, "encoding": {"text": {"type": "nominal", "field": "placeholder"}}, "height": 220, "title": "Biallelic indel size distribution", "width": 400}], "resolve": {"scale": {"color": "independent"}}}], "spacing": 70, "title": "default", "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-b67ec05acc63940ca4df7271dbaf1143": [{"placeholder": "No entries in VCF"}], "data-a2e00cd4653cf664f9d8893ddf89e6c8": [{"placeholder": "No entries in VCF with DP"}], "data-7c384005a17af21b412eb78cf0b899b4": [{"placeholder": "No entries in VCF with GQ"}], "data-57a1a0752ce0c3ea2e0f838660e4fa2f": [{"c": 0, "e": 0.5, "s": 0.0, "GT": "Ref (0/0)", "g": "main", "l": 0.0}, {"c": 0, "e": 1.0, "s": 0.5, "GT": "Ref (0/0)", "g": "main", "l": 0.0}, {"c": 0, "e": 0.5, "s": 0.0, "GT": "Het (0/x)", "g": "main", "l": 0.5}, {"c": 0, "e": 1.0, "s": 0.5, "GT": "Het (0/x)", "g": "main", "l": 0.5}, {"c": 0, "e": 0.5, "s": 0.0, "GT": "Hom (x/x)", "g": "main", "l": 1.0}, {"c": 0, "e": 1.0, "s": 0.5, "GT": "Hom (x/x)", "g": "main", "l": 1.0}], "data-c27c47333ad35eb954c1fa8cd921aa87": [{"c": 0, "e": 0.5, "s": 0.0, "GT": "Uncalled (./.)", "g": "others", "l": null}, {"c": 0, "e": 1.0, "s": 0.5, "GT": "Uncalled (./.)", "g": "others", "l": null}, {"c": 0, "e": 0.5, "s": 0.0, "GT": "Het - two variants (x/y)", "g": "others", "l": null}, {"c": 0, "e": 1.0, "s": 0.5, "GT": "Het - two variants (x/y)", "g": "others", "l": null}], "data-4873ade5c3f0b2272f2ce09e16536040": [{"placeholder": "No biallelic SNPs"}], "data-0bc020e31c321dd706d120527114f585": [{"placeholder": "No biallelic indels"}]}};
+      var embedOpt = {"downloadFileName": "SRR12038589.visual_report", "mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
