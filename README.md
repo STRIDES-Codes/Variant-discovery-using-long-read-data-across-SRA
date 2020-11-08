@@ -26,7 +26,8 @@ SARS-CoV-2 longread (SRA) mapped to SARS-CoV-2 reference genome (RefSeq) +++++> 
 + Visualize SNPs and associated SARS-CoV-2 metadata
 
 ## Note:
-Outputs from from our pipeline are JSON files which are similar to the one below. (https://github.com/NCBI-Codeathons/SARS2-Variation-Viewer).
+Outputs from from our pipeline are JSON files which are similar to the one below.
+
 
 ## Template for variant data (JSON)
 ```json
