@@ -27,3 +27,13 @@ Using the resulting data from about 20,000 runs in this project, here are the re
 - What are the most common locations for SNPs among US samples?
 + Which genes have the least number of SNPs across all samples?
 - Based on date of sample collection, where are the SNP hotspots?
+
+
+## People/Team
++ Vadim Zalunin, NCBI/NIH, Maryland, MD, zaluninvv@ncbi.nlm.nih.gov
++ Vamsi Kodali, NCBI/NIH, Maryland, MD, kodalivk@ncbi.nlm.nih.gov
++ Olaitan I. Awe, University of Ibadan, Nigeria, laitanawe@gmail.com
++ Brett Youtsey, <Affiliation>, brettyoutsey@gmail.com
++ Weizhong Chang, NIH, Maryland, MD, weizhong.chang@nih.gov
++ Cory Weller, <Affiliation>, cory.a.weller@gmail.com
++ Xiaoli Jiao, <Affiliation>, jiaoxl@gmail.com
