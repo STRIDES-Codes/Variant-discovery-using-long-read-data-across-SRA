@@ -20,3 +20,10 @@ This project is therefore aimed towards the development of a pipeline for the di
 
 ###### Some Longread Variant Callers
 [NanoCaller](https://github.com/WGLab/NanoCaller), [DeepVariant](https://github.com/google/deepvariant), [LongShot](https://github.com/pjedge/longshot), [Clair](https://github.com/HKU-BAL/Clair), [Medaka](https://github.com/nanoporetech/medaka)
+
+## Research Questions
+Using the resulting data from about 20,000 runs in this project, here are the research questions that we want to answer:
++ What are the top 10 hotspots for SNPs in SARS-CoV-2?
+- What are the most common locations for SNPs among US samples?
++ Which genes have the least number of SNPs across all samples?
+- Based on date of sample collection, where are the SNP hotspots?
