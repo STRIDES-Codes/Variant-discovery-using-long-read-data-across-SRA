@@ -66,7 +66,7 @@ Using the resulting data from about 20,000 runs in this project, here are the re
 + Vadim Zalunin, NCBI/NIH, Maryland, MD, zaluninvv@ncbi.nlm.nih.gov
 + Vamsi Kodali, NCBI/NIH, Maryland, MD, kodalivk@ncbi.nlm.nih.gov
 + Olaitan I. Awe, University of Ibadan, laitanawe@gmail.com
-+ Brett Youtsey, Los Alamos National Laboratory, brettyoutsey@gmail.com
++ Brett Youtsey, Los Alamos National Laboratory, byoutsey@lanl.gov
 + Weizhong Chang, NIH, Maryland, MD, weizhong.chang@nih.gov
 + Cory Weller, <Affiliation>, cory.a.weller@gmail.com
 + Xiaoli Jiao, <Affiliation>, jiaoxl@gmail.com
