@@ -8,21 +8,7 @@ SARS-CoV-2 variation data can be visualized using some already developed tools b
 
 ## Architecture
 
-+--------------------+
-| SARS-CoV-2         |
-| reference genome   |++++++++++|
-| (RefSeq)           |          |
-+--------------------+          |
-                                |
-                                |+++++> Alignments +++++> Identify SNPs +++++> Visualize SARS-CoV-2 SNPs
-                                |
-+--------------------+          |
-| SARS-CoV-2 longread|          |
-| sequences obtained |+++++++++++
-| from the SRA       |
-+--------------------+
-
-
+SARS-CoV-2 longread (SRA) mapped to SARS-CoV-2 reference genome (RefSeq) +++++> Alignments +++++> Identify SNPs +++++> Visualize SARS-CoV-2 SNPs
 
 ## Solution to the problem
 This project is therefore aimed towards the development of a pipeline for the discovery and visualization of SNPs in long read SARS-CoV-2 sequences obtained from the Sequence Read Archive (SRA). These long reads will be primarily from experiments performed using Pacbio Single Molecule Real-Time (SMRT) and Oxford Nanopore Sequencing technologies.
