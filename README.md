@@ -6,12 +6,12 @@ Single Nucleotide Polymorphisms (SNPs) across SARS-CoV-2 genomes are critical to
 ## What's the problem?
 SARS-CoV-2 variation data can be visualized using some already developed tools but these existing tools are designed mostly for short reads and are therefore limited by the amount and kind of information that can be obtained from the resulting SARS-CoV-2 genomic data analysis.
 
-## Architecture
-
-SARS-CoV-2 longread (SRA) mapped to SARS-CoV-2 reference genome (RefSeq) +++++> Alignments +++++> Identify SNPs +++++> Visualize SARS-CoV-2 SNPs
-
 ## Solution to the problem
 This project is therefore aimed towards the development of a pipeline for the discovery and visualization of SNPs in long read SARS-CoV-2 sequences obtained from the Sequence Read Archive (SRA). These long reads will be primarily from experiments performed using Pacbio Single Molecule Real-Time (SMRT) and Oxford Nanopore Sequencing technologies.
+
+## Architecture for the solution
+
+SARS-CoV-2 longread (SRA) mapped to SARS-CoV-2 reference genome (RefSeq) +++++> Alignments +++++> Identify SNPs +++++> Visualize SARS-CoV-2 SNPs
 
 ## Workflow
 + Download Reference SARS-CoV-2 Genome from RefSeq (data/ref/sars2_ref_sequence.fasta)
