@@ -23,17 +23,17 @@ This project is therefore aimed towards the development of a pipeline for the di
 
 ## Research Questions
 Using the resulting data from about 20,000 runs in this project, here are the research questions that we want to answer:
-+ What are the top 10 hotspots for SNPs in SARS-CoV-2?
+- What are the top 10 hotspots for SNPs in SARS-CoV-2?
 - What are the most common locations for SNPs among US samples?
-+ Which genes have the least number of SNPs across all samples?
+- Which genes have the least number of SNPs across all samples?
 - Based on date of sample collection, where are the SNP hotspots?
 
 
 ## People/Team
 + Vadim Zalunin, NCBI/NIH, Maryland, MD, zaluninvv@ncbi.nlm.nih.gov
 + Vamsi Kodali, NCBI/NIH, Maryland, MD, kodalivk@ncbi.nlm.nih.gov
-+ Olaitan I. Awe, University of Ibadan, Nigeria, laitanawe@gmail.com
-+ Brett Youtsey, <Affiliation>, brettyoutsey@gmail.com
++ Olaitan I. Awe, University of Ibadan, laitanawe@gmail.com
++ Brett Youtsey, Los Alamos National Laboratory, brettyoutsey@gmail.com
 + Weizhong Chang, NIH, Maryland, MD, weizhong.chang@nih.gov
 + Cory Weller, <Affiliation>, cory.a.weller@gmail.com
 + Xiaoli Jiao, <Affiliation>, jiaoxl@gmail.com
