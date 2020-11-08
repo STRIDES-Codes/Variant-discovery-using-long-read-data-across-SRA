@@ -29,6 +29,7 @@ SARS-CoV-2 longread (SRA) mapped to SARS-CoV-2 reference genome (RefSeq) +++++> 
 Outputs from from our pipeline are JSON files which are similar to the one [here](https://github.com/NCBI-Codeathons/SARS2-Variation-Viewer).
 
 ## Template for variant data (JSON)
+```json
 {
      "start": 9560,
      "stop": 9561,
@@ -74,7 +75,7 @@ Outputs from from our pipeline are JSON files which are similar to the one [here
      "codon": "TCA",
      "amino_acid": "S"
    },
-
+```
 
 Our pipeline produced the following products:
 + Alignments (BAM files)
