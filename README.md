@@ -1,7 +1,7 @@
 # Variant discovery using long-read data across SRA
 
 ## Background
-Single Nucleotide Polymorphisms (SNPs) across SARS-CoV-2 genomes are critical to the understanding of their molecular biology and SNPs are also important for public health interventions.
+Single Nucleotide Polymorphisms (SNPs) across SARS-CoV-2 genomes are critical to the understanding of their molecular biology and SNPs are also important for public health interventions, especially for CoVID-19 (the disease resulting from SARS-CoV-2 infection).
 
 ## What's the problem?
 SARS-CoV-2 variation data can be visualized using some already developed tools but these existing tools are designed mostly for short reads and are therefore limited by the amount and kind of information that can be obtained from the resulting SARS-CoV-2 genomic data analysis.
