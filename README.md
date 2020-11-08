@@ -28,6 +28,54 @@ SARS-CoV-2 longread (SRA) mapped to SARS-CoV-2 reference genome (RefSeq) +++++> 
 ## Note:
 Outputs from from our pipeline are JSON files which are similar to the one [here](https://github.com/NCBI-Codeathons/SARS2-Variation-Viewer).
 
+## Template for variant data (JSON)
+{
+     "start": 9560,
+     "stop": 9561,
+     "reference_sequence": "C",
+     "alleles": [
+       {
+         "allele": "T",
+         "count": 6,
+         "spdi": "NC_045512.2:9560:C:T",
+         "Host": [
+           {
+             "value": "Homo sapiens",
+             "count": 6
+           }
+         ],
+         "Collection Date": [
+           {
+             "value": "2020-01-11",
+             "count": 1
+           },
+           ...
+         ],
+         "Collection Location": [
+           {
+             "value": "USA: CA/North America",
+             "count": 5
+           },
+           {
+             "value": "China/Asia",
+             "count": 1
+           }
+         ],
+         "codon": "TTA",
+         "amino_acid": "L",
+         "protein_variant": "S336L",
+         "aa_type": "non_synonymous"
+       }
+     ],
+     "protein_name": "nsp4",
+     "protein_accession": "YP_009724389.1",
+     "protein_position": 336,
+     "offset": 1,
+     "codon": "TCA",
+     "amino_acid": "S"
+   },
+
+
 Our pipeline produced the following products:
 + Alignments (BAM files)
 - Vigor4 annotations (GFF and peptides)
