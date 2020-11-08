@@ -8,10 +8,10 @@ SARS-CoV-2 variation data can be visualized using some already developed tools b
 This project is therefore aimed towards the development of a pipeline for the discovery and visualization of SNPs in long read SARS-CoV-2 sequences obtained from the Sequence Read Archive (SRA). These long reads will be primarily from experiments performed using Pacbio Single Molecule Real-Time (SMRT) and Oxford Nanopore Sequencing technologies.
 
 ## Workflow
-+ Download Reference SARS-CoV-2 Genome from RefSeq
++ Download Reference SARS-CoV-2 Genome from RefSeq (data/ref/sars2_ref_sequence.fasta)
 - Query the Sequence Read Archive (SRA) to find longread datasets for SARS-CoV-2
 + Generate TSV file with all accessions resulting from the longread query (18,966 accessions)
-- Download some SARS-CoV-2 fastq files from GenBank using a few accessions above (7 fastqs in list.txt)
+- Download some SARS-CoV-2 fastq files from GenBank using a few accessions above (7 fastqs in data/test_fastq/list.txt)
 + Use Minimap to align these fastqs to the reference SARS-CoV-2 genome
 - Use Medaka to generate VCFs from the alignments for each of the samples.
 + Analyse the VCFs and look for SNPs based on the alignments
