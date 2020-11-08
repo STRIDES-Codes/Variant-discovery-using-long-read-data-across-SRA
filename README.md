@@ -98,7 +98,8 @@ Using the resulting data from about 20,000 runs in this project, here are the re
 - Based on date of sample collection, where are the SNP hotspots?
 
 ## Challenges
-+ We didn't have time to figure out permissions to run cluster, so we had to stick with our local Virtual Machines
++ We didn't have time to figure out permissions to run cluster, so we had to stick with our local Virtual Machines.
++ fastq-dump took a long time and we were running out of disk space (we needed ~10Tb).
 + We can't do visualization of SNPs because the viewer is not available.
 + The hardest part of our work is to wait.
 + A few issues with Docker.
