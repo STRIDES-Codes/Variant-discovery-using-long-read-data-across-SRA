@@ -21,9 +21,9 @@ SARS-CoV-2 longread (SRA) mapped to SARS-CoV-2 reference genome (RefSeq) +++++> 
 + Use Minimap to align these fastqs to the reference SARS-CoV-2 genome
 - Use Deepvariant to generate VCFs from the alignments for each of the samples.
 + Assemblies were done with CANU
-+ Analyse the VCFs and look for SNPs based on the alignments
-- Correlate SNPs with SARS-CoV-2 genome metadata
-+ Visualize SNPs and associated SARS-CoV-2 metadata
+- Analyse the VCFs and look for SNPs based on the alignments
++ Correlate SNPs with SARS-CoV-2 genome metadata
+- Visualize SNPs and associated SARS-CoV-2 metadata
 
 ## Note:
 Outputs from from our pipeline are JSON files which are similar to the one below.
