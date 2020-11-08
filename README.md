@@ -100,6 +100,9 @@ Using the resulting data from about 20,000 runs in this project, here are the re
 ## Challenges
 + We didn't have time to figure out permissions to run cluster, so we had to stick with our local Virtual Machines
 + We can't do visualization of SNPs because the viewer is not available.
++ The hardest part of our work is to wait.
++ A few issues with Docker.
+
 
 ## Next steps
 + We intend to continue working on this project after the CSHL codeathon 2020.
