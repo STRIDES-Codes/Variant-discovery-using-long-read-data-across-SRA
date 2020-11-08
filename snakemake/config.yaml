@@ -1,1 +1,4 @@
-/data/snakemake_pipeline/config.yaml
+sra_accs_fn: 'hundred_runs.tsv'
+ref_dir: '/data/ref/'
+ref_fa: '/data/ref/GCF_009858895.2_ASM985889v3_genomic.fna'
+ref_fai: '/data/ref/GCF_009858895.2_ASM985889v3_genomic.fna.fai'
