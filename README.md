@@ -3,20 +3,50 @@
 ## Background
 Single Nucleotide Polymorphisms (SNPs) across SARS-CoV-2 genomes are critical to the understanding of their molecular biology and SNPs are also important for public health interventions.
 
-SARS-CoV-2 variation data can be visualized using some already developed tools but these existing tools are designed mostly for short reads.
+## What's the problem?
+SARS-CoV-2 variation data can be visualized using some already developed tools but these existing tools are designed mostly for short reads and are therefore limited by the amount and kind of information that can be obtained from the resulting SARS-CoV-2 genomic data analysis.
 
+## Architecture
+
++--------------------+
+| SARS-CoV-2         |
+| reference genome   |++++++++++|
+| (RefSeq)           |          |
++--------------------+          |
+                                |
+                                |+++++> Alignments +++++> Identify SNPs +++++> Visualize SARS-CoV-2 SNPs
+                                |
++--------------------+          |
+| SARS-CoV-2 longread|          |
+| sequences obtained |+++++++++++
+| from the SRA       |
++--------------------+
+
+
+
+## Solution to the problem
 This project is therefore aimed towards the development of a pipeline for the discovery and visualization of SNPs in long read SARS-CoV-2 sequences obtained from the Sequence Read Archive (SRA). These long reads will be primarily from experiments performed using Pacbio Single Molecule Real-Time (SMRT) and Oxford Nanopore Sequencing technologies.
 
 ## Workflow
 + Download Reference SARS-CoV-2 Genome from RefSeq (data/ref/sars2_ref_sequence.fasta)
 - Query the Sequence Read Archive (SRA) to find longread datasets for SARS-CoV-2
 + Generate TSV file with all accessions resulting from the longread query (18,966 accessions in data/long_reads_SARS2.tsv)
-- Download some SARS-CoV-2 fastq files from GenBank using a few accessions above (7 fastqs in data/test_fastq/list.txt)
+- Download some SARS-CoV-2 fastq files from the Sequence Read Archive using a few accessions above (7 fastqs in test dataset)
 + Use Minimap to align these fastqs to the reference SARS-CoV-2 genome
-- Use Medaka to generate VCFs from the alignments for each of the samples.
+- Use Deepvariant to generate VCFs from the alignments for each of the samples.
++ Assemblies were done with CANU
 + Analyse the VCFs and look for SNPs based on the alignments
 - Correlate SNPs with SARS-CoV-2 genome metadata
 + Visualize SNPs and associated SARS-CoV-2 metadata
+
+## Note:
+Outputs from from our pipeline are JSON files which are similar to the one [here](https://github.com/NCBI-Codeathons/SARS2-Variation-Viewer).
+
+Our pipeline produced the following products:
++ Alignments (BAM files)
+- Vigor4 annotations (GFF and peptides)
++ Assemblies (contig fasta)
+- nsps search results
 
 ###### Some Longread Variant Callers
 [NanoCaller](https://github.com/WGLab/NanoCaller), [DeepVariant](https://github.com/google/deepvariant), [LongShot](https://github.com/pjedge/longshot), [Clair](https://github.com/HKU-BAL/Clair), [Medaka](https://github.com/nanoporetech/medaka)
@@ -28,6 +58,9 @@ Using the resulting data from about 20,000 runs in this project, here are the re
 - Which genes have the least number of SNPs across all samples?
 - Based on date of sample collection, where are the SNP hotspots?
 
+## Challenges and next steps
++ We didn't have time to figure out permissions to run cluster, so we had to stick with our local Virtual Machines
++ We can't do visualization of SNPs because the viewer is not available.
 
 ## People/Team
 + Vadim Zalunin, NCBI/NIH, Maryland, MD, zaluninvv@ncbi.nlm.nih.gov
