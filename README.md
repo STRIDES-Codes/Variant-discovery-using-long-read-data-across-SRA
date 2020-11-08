@@ -93,9 +93,12 @@ Using the resulting data from about 20,000 runs in this project, here are the re
 - Which genes have the least number of SNPs across all samples?
 - Based on date of sample collection, where are the SNP hotspots?
 
-## Challenges and next steps
+## Challenges
 + We didn't have time to figure out permissions to run cluster, so we had to stick with our local Virtual Machines
 + We can't do visualization of SNPs because the viewer is not available.
+
+## Next steps
++ We intend to continue working on this project after the codeathon.
 
 ## People/Team
 + Vadim Zalunin, NCBI/NIH, Maryland, MD, zaluninvv@ncbi.nlm.nih.gov
