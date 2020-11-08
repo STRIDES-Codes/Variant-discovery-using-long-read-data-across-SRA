@@ -1,0 +1,1 @@
+/data/snakemake_pipeline/run_minimap.smk

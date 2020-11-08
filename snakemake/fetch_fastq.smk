@@ -1,0 +1,1 @@
+/data/snakemake_pipeline/fetch_fastq.smk
