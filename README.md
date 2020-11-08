@@ -9,8 +9,8 @@ SARS-CoV-2 variation data can be visualized using some already developed tools b
 ## Solution to the problem
 This project is therefore aimed towards the development of a pipeline for the discovery and visualization of SNPs in long read SARS-CoV-2 sequences obtained from the Sequence Read Archive (SRA). These long reads will be primarily from experiments performed using Pacbio Single Molecule Real-Time (SMRT) and Oxford Nanopore Sequencing technologies.
 
-## Goal 
-Our main immediate goal is to provide variants, metadata, and annotations in JSON format. Then the SARS-CoV-2 viewer can display certain regions, protein e.t.c
+## Goal
+Our main immediate goal is to provide variants, metadata, and annotations in JSON format. The SARS-CoV-2 viewer can then display certain regions, proteins e.t.c.
 
 ## Architecture for the solution
 
