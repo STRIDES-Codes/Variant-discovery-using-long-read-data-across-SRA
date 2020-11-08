@@ -10,7 +10,7 @@ This project is therefore aimed towards the development of a pipeline for the di
 ## Workflow
 + Download Reference SARS-CoV-2 Genome from RefSeq (data/ref/sars2_ref_sequence.fasta)
 - Query the Sequence Read Archive (SRA) to find longread datasets for SARS-CoV-2
-+ Generate TSV file with all accessions resulting from the longread query (18,966 accessions)
++ Generate TSV file with all accessions resulting from the longread query (18,966 accessions in data/long_reads_SARS2.tsv)
 - Download some SARS-CoV-2 fastq files from GenBank using a few accessions above (7 fastqs in data/test_fastq/list.txt)
 + Use Minimap to align these fastqs to the reference SARS-CoV-2 genome
 - Use Medaka to generate VCFs from the alignments for each of the samples.
